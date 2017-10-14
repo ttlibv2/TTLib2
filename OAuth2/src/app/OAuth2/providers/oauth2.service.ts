@@ -14,6 +14,11 @@ export abstract class OAuth2Service {
     {
         this.config = config;
     }
+  
+    setToken(token: TokenResponse)
+    {
+      this.token = token;
+    }
 
     /**
     * Generate a URL to request access from OAuth 2.0 server
