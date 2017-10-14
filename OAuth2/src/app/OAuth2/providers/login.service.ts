@@ -15,15 +15,28 @@ export class OAuth2Login extends OAuth2Service {
      * Login config
      */
     protected config: LoginConfig;
+    private authCode: string;
+    private refreshToken: string;
 
     /**
      * Constructor
      * @param {HttpClient} http 
      */
-    constructor(http: HttpClient) {
+    constructor(http: HttpClient) 
+    {
         super(http);
     }
-
+  
+    setAuthCode(code: string)
+    {
+      this.authCode = code;
+    }
+  
+    setRefreshToken(refresh_token: string)
+    {
+      this.refreshToken = refresh_token;
+    }
+  
     /**
     * Generate a URL to request access from OAuth 2.0 server
     * @return {string} URL to consent page.
