@@ -37,11 +37,36 @@ export class TokenResponse {
 	 * expires_at: The timestamp at which the Access Token will expire. 
 	 * */
 	expiresAt: number;
-
-	update(token: TokenResponse)
-	{
-		
-	}
+  
+  setAccessToken(access_token: string)
+  {
+    this.accessToken = access_token;
+  }
+  
+  setIdToken(id_token: string)
+  {
+    this.idToken = id_token;
+  }
+  
+  setRefreshToken(refresh_token: string)
+  {
+    this.refreshToken = refresh_token;
+  }
+  
+  setRefreshToken(refresh_token: string)
+  {
+    this.refreshToken = refresh_token;
+  }
+  
+  setRefreshToken(refresh_token: string)
+  {
+    this.refreshToken = refresh_token;
+  }
+  
+   setRefreshToken(refresh_token: string)
+  {
+    this.refreshToken = refresh_token;
+  }
 
 	/**
 	 * Parse json structure => token 
