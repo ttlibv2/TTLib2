@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
-import { OAuth2Login } from './OAuth2/providers/login.service';
 import { HttpClientModule } from '@angular/common/http';
+import { OAuth2Login } from './oauth2-client/providers/login.service';
+import { OAuth2Client } from './oauth2-client/providers/oauth2.service';
 
-const routing:Routes = [];
+const routing: Routes = [];
 
 @NgModule({
   declarations: [

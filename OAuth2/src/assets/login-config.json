@@ -1,0 +1,10 @@
+{
+  "endpoint": {
+    "auth_url": "",
+    "token_url": "",
+    "revoke_url": ""
+  }
+
+
+
+}
